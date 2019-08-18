@@ -1,1 +1,19 @@
 // Mixins Here
+.buttonStyles (@width, @height, @color) {
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    height: @height;
+    width: @width;
+    background-color: @color;
+    &:hover {background-color: orange;};
+}
+
+.centerVerticle() {
+    display: flex;
+    justify-content: center
+}
+
+.imageBorder() {
+    border: 5px solid @main-border-color;
+}
